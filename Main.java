@@ -11,9 +11,6 @@ import java.util.List;
 public class Main {
 
 	public static void main(String[] args) {
-//		Создайте Comparator<File> для сортировке списка текстовых файлов по количеству знаков
-//		препинания в них. При решении принять, что знаки препинания ограниченны символами {, . - ? !}
-//		и символ пробел. 
 		List<File> tempList = Arrays.asList(new File("a.txt"), new File("b.txt"), new File("c.txt"), new File("d.txt"), new File("e.txt"));
 		Comparator<File> comp = (a, b) -> Integer.compare(checkFile(a), checkFile(b));
 		tempList.sort(comp);
